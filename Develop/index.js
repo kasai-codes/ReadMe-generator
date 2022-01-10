@@ -5,12 +5,12 @@ const util = require("util");
 const generateMarkdown = require('./utils/generateMarkdown');
 const writeFileAsync = util.promisify(fs.writeFile);
 
-function promptUser(){
+function promptUser() {
     return inquirer.prompt([
         {
             type: 'input',
             message: 'What is your project title?',
-            name: 'title',
+            name: 'projectTitle',
         },
 
         {
@@ -23,7 +23,7 @@ function promptUser(){
         {
             type: 'input',
             message: 'Please provide installation instructions if any:',
-            name: 'install',
+            name: 'installation',
         },
 
         {
@@ -49,14 +49,14 @@ function promptUser(){
         {
             type: 'input',
             message: 'Who is contributing to this project?',
-            name: 'contributers',
+            name: 'contributing',
         },
 
 
         {
             type: 'input',
             message: 'Is there a test?',
-            name: 'test',
+            name: 'tests',
         },
 
         {
@@ -86,9 +86,9 @@ async function init() {
         // Write new README.md file
         await writeFileAsync('./README.md', generateReadme);
         console.log('Successfully wrote to README.md');
-    }   catch(err) {
+    } catch (err) {
         console.log(err);
     }
-  }
-  
-  init();  
+}
+
+init();  
