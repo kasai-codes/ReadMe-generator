@@ -77,3 +77,18 @@ function promptUser(){
 
     ])
 }
+// Async function using util.promisify 
+async function init() {
+    try {
+        // Ask user questions and generate responses
+        const answers = await promptUser();
+        const generateReadme = generateMarkdown(answers);
+        // Write new README.md file
+        await writeFileAsync('./README.md', generateReadme);
+        console.log('Successfully wrote to README.md');
+    }   catch(err) {
+        console.log(err);
+    }
+  }
+  
+  init();  
