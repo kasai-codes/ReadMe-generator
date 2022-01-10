@@ -34,7 +34,7 @@ function promptUser(){
         {
             type: "list",
             name: "license",
-            message: "Chose the anlicense for this project: ",
+            message: "Chose the a license for this project: ",
             choices: [
                 "Apache",
                 "Academic",
@@ -80,7 +80,7 @@ function promptUser(){
 // Async function using util.promisify 
 async function init() {
     try {
-        // Ask user questions and generate responses
+        // Ask user questions and generate responses once all questions have been answered 
         const answers = await promptUser();
         const generateReadme = generateMarkdown(answers);
         // Write new README.md file

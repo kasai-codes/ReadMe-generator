@@ -43,3 +43,4 @@ function generateMarkdown(answers) {
     _This README was generatedvby [README-generator](https://github.com/kasaipreston)) 🔥🔥🔥_
       `;
     }
+    module.exports = generateMarkdown;
