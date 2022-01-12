@@ -1,5 +1,5 @@
 
-<h1 align="center">reademe gen </h1>
+<h1 align="center">ReadMe Generator</h1>
     
 ![badge](https://img.shields.io/badge/license-Academic-brightgreen)<br />
     
