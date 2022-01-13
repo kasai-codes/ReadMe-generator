@@ -9,7 +9,8 @@
 
 Here is a live demo.
 
-! [README Generator](./readmegen.mp4)
+https://loom.com/share/988b83d9cf2d4e65965c4fc7ccd4a7ae
+
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
